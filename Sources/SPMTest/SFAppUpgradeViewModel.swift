@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SFFoundation
 
 struct SFAppUpgradeViewModel {
     
