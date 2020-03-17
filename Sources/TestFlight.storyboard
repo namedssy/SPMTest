@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Upgrade Test Flight View Controller-->
+        <scene sceneID="M15-sE-MDQ">
+            <objects>
+                <viewController storyboardIdentifier="TestFlight" id="bGS-Ic-Snh" customClass="SFAppUpgradeTestFlightViewController" customModule="Merchant" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h7h-nt-Moc"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ie-tE-c0f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kjN-kp-l4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1步获取" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aga-Rs-v0K" userLabel="TestFlight Title Label">
+                                <rect key="frame" x="50" y="40" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_test_TestFlight" translatesAutoresizingMaskIntoConstraints="NO" id="3Ys-CR-rNR" userLabel="TestFlight Icon ImageView">
+                                <rect key="frame" x="50" y="81" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="mMn-7A-g4q"/>
+                                    <constraint firstAttribute="height" constant="70" id="xlx-dH-6nQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestFlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7F-4r-H9W" userLabel="TestFlight Name Label">
+                                <rect key="frame" x="140" y="81" width="88" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H28-SW-Fzy" userLabel="TestFlight Download Button">
+                                <rect key="frame" x="140" y="119" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="DnT-sg-tQg"/>
+                                    <constraint firstAttribute="height" constant="32" id="E2E-wm-Ubi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="安装">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.5450980392" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sf_cornerRadius">
+                                        <real key="value" value="8.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="sf_borderColor">
+                                        <color key="value" red="0.0039215686269999999" green="0.5450980392" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sf_borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="testFlightDownloadButtonClick:" destination="bGS-Ic-Snh" eventType="touchUpInside" id="4eH-DU-MA1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUX-k7-eiv" userLabel="TestFlight Content Label">
+                                <rect key="frame" x="50" y="167" width="275" height="60"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="TestFlight ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="是苹果官方提供的内测应用，请放心安装，安装完成后返回本页面点击第二步的“立即体验”按钮即可获取尝鲜版。">
+                                        <attributes>
+                                            <color key="NSColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-xl-QLm" userLabel="App Icon ImageView">
+                                <rect key="frame" x="50" y="308" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2PW-cg-CoI"/>
+                                    <constraint firstAttribute="width" constant="70" id="vj8-oV-HGe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ9-Hi-a4t" userLabel="App Name Label">
+                                <rect key="frame" x="140" y="308" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZj-Sj-tdD" userLabel="App Content">
+                                <rect key="frame" x="50" y="394" width="275" height="38.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="如果您已在设备上安装">
+                                        <attributes>
+                                            <color key="NSColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="TestFlight">
+                                        <attributes>
+                                            <color key="NSColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，点击“立即体验”按钮，即可获取尝鲜版。">
+                                        <attributes>
+                                            <color key="NSColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-lM-dQa" userLabel="App Download Button">
+                                <rect key="frame" x="140" y="346" width="72" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="DxP-P4-UfE"/>
+                                    <constraint firstAttribute="height" constant="32" id="Lnb-ZC-abg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="立即体验">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.5450980392" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sf_cornerRadius">
+                                        <real key="value" value="8.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="sf_borderColor">
+                                        <color key="value" red="0.0039215686269999999" green="0.5450980392" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sf_borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="appDownloadButtonClick:" destination="bGS-Ic-Snh" eventType="touchUpInside" id="FyX-sa-2XL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第2步安装尝鲜版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-no-AJ7" userLabel="App Title Label">
+                                <rect key="frame" x="50" y="267" width="139.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xUX-k7-eiv" secondAttribute="trailing" constant="50" id="2JX-Fj-JHU"/>
+                            <constraint firstItem="xUX-k7-eiv" firstAttribute="leading" secondItem="3Ys-CR-rNR" secondAttribute="leading" id="3Eg-RE-sOa"/>
+                            <constraint firstItem="cQ9-Hi-a4t" firstAttribute="top" secondItem="T4I-xl-QLm" secondAttribute="top" id="5zq-IA-K4R"/>
+                            <constraint firstItem="3Ys-CR-rNR" firstAttribute="leading" secondItem="Aga-Rs-v0K" secondAttribute="leading" id="6MT-Lv-Ted"/>
+                            <constraint firstItem="xUX-k7-eiv" firstAttribute="top" secondItem="3Ys-CR-rNR" secondAttribute="bottom" constant="16" id="6Zv-F3-UCu"/>
+                            <constraint firstItem="Aga-Rs-v0K" firstAttribute="top" secondItem="kjN-kp-l4W" secondAttribute="top" constant="40" id="BOV-Py-d37"/>
+                            <constraint firstItem="LcR-lM-dQa" firstAttribute="bottom" secondItem="T4I-xl-QLm" secondAttribute="bottom" id="Gqu-HF-Dob"/>
+                            <constraint firstItem="Aga-Rs-v0K" firstAttribute="leading" secondItem="kjN-kp-l4W" secondAttribute="leading" constant="50" id="Jbo-fI-9j8"/>
+                            <constraint firstItem="LcR-lM-dQa" firstAttribute="leading" secondItem="cQ9-Hi-a4t" secondAttribute="leading" id="LCb-DS-VW6"/>
+                            <constraint firstItem="H28-SW-Fzy" firstAttribute="leading" secondItem="Z7F-4r-H9W" secondAttribute="leading" id="PkW-zc-lxd"/>
+                            <constraint firstItem="cQ9-Hi-a4t" firstAttribute="leading" secondItem="T4I-xl-QLm" secondAttribute="trailing" constant="20" id="Q2L-sa-FWq"/>
+                            <constraint firstItem="Z7F-4r-H9W" firstAttribute="leading" secondItem="3Ys-CR-rNR" secondAttribute="trailing" constant="20" id="QnK-z5-5vV"/>
+                            <constraint firstItem="Z7F-4r-H9W" firstAttribute="top" secondItem="3Ys-CR-rNR" secondAttribute="top" id="WW9-Qk-R56"/>
+                            <constraint firstItem="H28-SW-Fzy" firstAttribute="leading" secondItem="Z7F-4r-H9W" secondAttribute="leading" id="aEc-vT-TCO"/>
+                            <constraint firstItem="qZj-Sj-tdD" firstAttribute="leading" secondItem="T4I-xl-QLm" secondAttribute="leading" id="amT-wT-PhD"/>
+                            <constraint firstItem="H28-SW-Fzy" firstAttribute="bottom" secondItem="3Ys-CR-rNR" secondAttribute="bottom" id="dLl-AI-POM"/>
+                            <constraint firstItem="T4I-xl-QLm" firstAttribute="leading" secondItem="hx1-no-AJ7" secondAttribute="leading" id="duK-PS-PLA"/>
+                            <constraint firstItem="3Ys-CR-rNR" firstAttribute="top" secondItem="Aga-Rs-v0K" secondAttribute="bottom" constant="20" id="f5L-uT-2tX"/>
+                            <constraint firstItem="qZj-Sj-tdD" firstAttribute="top" secondItem="T4I-xl-QLm" secondAttribute="bottom" constant="16" id="hSh-4k-ChK"/>
+                            <constraint firstAttribute="trailing" secondItem="qZj-Sj-tdD" secondAttribute="trailing" constant="50" id="ltA-t9-5Pt"/>
+                            <constraint firstItem="T4I-xl-QLm" firstAttribute="top" secondItem="hx1-no-AJ7" secondAttribute="bottom" constant="20" id="n7I-be-Ong"/>
+                            <constraint firstItem="hx1-no-AJ7" firstAttribute="leading" secondItem="xUX-k7-eiv" secondAttribute="leading" id="zPn-Pb-JMs"/>
+                            <constraint firstItem="hx1-no-AJ7" firstAttribute="top" secondItem="xUX-k7-eiv" secondAttribute="bottom" constant="40" id="zuO-n7-qtY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appIconImageView" destination="T4I-xl-QLm" id="VTv-s5-K4A"/>
+                        <outlet property="appNameLabel" destination="cQ9-Hi-a4t" id="qdN-gH-8HQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WMG-Vs-3Gw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_test_TestFlight" width="70" height="70"/>
+    </resources>
+</document>
