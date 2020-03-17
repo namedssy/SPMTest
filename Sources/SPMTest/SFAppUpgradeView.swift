@@ -22,7 +22,7 @@ class SFAppUpgradeView: UIView, NXAlertable {
     private lazy var topImageView: UIImageView = {
         let topImageView = UIImageView()
         topImageView.translatesAutoresizingMaskIntoConstraints = false
-        topImageView.image = UIImage(named: "img_picture")
+        topImageView.image = UIImage(named: "img_picture", in: Bundle(for: SFAppUpgradeView.self), compatibleWith: nil)
         return topImageView
     }()
     /// 标题
