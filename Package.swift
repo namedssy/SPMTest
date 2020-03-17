@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SPMTest",
             dependencies: [],
-            path: "SPMTest/sources"),
+            path: "SPMTest/Sources"),
         .testTarget(
             name: "SPMTestTests",
             dependencies: ["SPMTest"]),
